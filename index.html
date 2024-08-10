@@ -14,6 +14,7 @@
 	<header class="
 	bg-blue-500
 	  py-5
+	  sm:py-0
 	  relative
 	">
 		<div class="
@@ -58,17 +59,39 @@
 			sm:relative
 			sm:top-0
 			sm:flex
-			sm:justify-around
+			sm:justify-evenly
+			sm:items-center
 			">
-				<li class="mb-2 sm:mb-0 sm:ml-3"><a class="text-white font-semibold" href="">Home</a></li>
-				<li class="mb-2 sm:mb-0 sm:ml-3"><a class="text-white font-semibold" href="">Contact</a></li>
-				<li class="mb-2 sm:mb-0 sm:ml-3"><a class="text-white font-semibold" href="">Login</a></li>
-				<li class="mb-2 sm:mb-0 sm:ml-3"><a class="text-white font-semibold" href="">Sign In</a></li>
+				<li class="mb-2 sm:mb-0 sm:ml-3"><a class="text-white font-semibold hover:text-blue-900 hover:transition-colors" href="">Home</a></li>
+				<li class="mb-2 sm:mb-0 sm:ml-3"><a class="text-white font-semibold hover:text-blue-900 hover:transition-colors" href="">Contact</a></li>
+				<li class="mb-2 sm:mb-0 sm:ml-3"><a class="text-white font-semibold hover:text-blue-900 hover:transition-colors" href="">Login</a></li>
+				<li class="mb-2 sm:mb-0 sm:ml-3"><a class="text-white font-semibold  bg-blue-900 px-3 py-3 block rounded pb-4" href="">Sign In</a></li>
 			</ul>
 		</nav>
 		</div>
 		
 	</header>
+
+	<section class="bg-blue-100 h-auto pb-10">
+		<div class="container mx-auto w-3/4 flex justify-between flex-col sm:flex-row sm:h-full sm:items-center">
+			<div class="order-2 bg-white p-8 sm:order-1 sm:w-1/2 sm:text-center">
+				<h3 class="text-3xl font-bold mb-2">Welcome Back</h3>
+				<p class="text-gray-500 mb-5">Please enter your details</p>
+				<form action="">
+					<label class="font-semibold mb-1 block sm:text-left" for="email">Email Address</label>
+					<input class="border w-full p-2 mb-2 rounded-lg " type="email" name="" id="" placeholder="Enter your Email Address">
+					<label class="font-semibold mb-1 block sm:text-left" for="Password">Password</label>
+					<input class="border w-full p-2 mb-3 rounded-lg " type="password" name="" id="" placeholder="Enter your Password">
+					<input class="text-white font-semibold  bg-blue-900 px-3 py-2 block rounded pb-3 w-full cursor-pointer hover:bg-black mb-4" type="submit" value="Sign In">
+				</form>
+				<p class="text-gray-400 text-sm">Don't Have an account? <a class="text-blue-500 underline" href="">Sign up</a></p>
+			</div>
+			<div class="order-1 py-8 sm:order-2 sm:w-1/2 sm:flex sm:items-center sm:pl-5">
+				<img src="img/login.svg" alt="">
+			</div>
+		</div>
+		
+	</section>
 
 	<script src="scripts.js" type="module"></script>
 </body>
